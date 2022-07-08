@@ -3,9 +3,15 @@
 #include <time.h>
 
 #define N 3
+#define NAME_LENGTH 20
 
 int main (int argc, char *args[]) {
     unsigned int heads = 0, tails = 0;
+    char name[NAME_LENGTH];
+
+    printf("Who are you?\n");
+    scanf("%s", name);
+    printf("Hello, %s!\n", name);
 
     printf("Tossing a coin...\n");
     srand(time(0));
